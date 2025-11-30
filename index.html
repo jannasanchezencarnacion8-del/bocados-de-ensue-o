@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocados de Ensueño</title>
+
+    <style>
+        /* ===== ESTILOS GENERALES ===== */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fde5ea;
+            color: #5b2c28;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        /* ===== MENÚ SUPERIOR ===== */
+        nav {
+            background-color: #f7c7d3;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5b2c28;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffdde9;
+            transform: scale(1.1);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #f7c7d3;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            border-radius: 12px;
+        }
+
+        /* ===== SOBRE NOSOTROS ===== */
+        .sobre-nosotros {
+            padding: 40px 20px;
+            background-color: #ffeef3;
+            text-align: center;
+        }
+
+        .sobre-contenido {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .sobre-nosotros img {
+            width: 260px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* ===== GALERÍAS ===== */
+        .contenedor-imgs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Contenedor individual */
+        .item {
+            text-align: center;
+            width: 260px;
+        }
+
+        .item p {
+            margin: 0 0 8px 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .item img {
+            width: 260px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .item img:hover {
+            transform: scale(1.06);
+        }
+
+        /* ===== PRECIOS ===== */
+        .precios {
+            margin-top: 30px;
+            background-color: #ffe1ed;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* ===== BOTÓN WHATSAPP ===== */
+        .whatsapp-flotante {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .whatsapp-flotante:hover {
+            transform: scale(1.12);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #f7c7d3;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.95rem;
+            margin-top: 40px;
+        }
+
+        /* ===== ANIMACIONES ===== */
+        .animado {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+
+        .animar {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== MENÚ SUPERIOR ===== -->
+<nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#postres">Postres</a>
+    <a href="#bebidas">Bebidas</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header class="animado">
+    <img src="logo.jpg.jpeg" alt="Logo Bocados de Ensueño">
+    <h1>Bocados de Ensueño</h1>
+</header>
+
+<!-- ===== SOBRE NOSOTROS ===== -->
+<section class="sobre-nosotros animado" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+
+    <div class="sobre-contenido">
+        <p>
+            En <strong>Bocados de Ensueño</strong> creamos postres y bebidas con amor, pasión 
+            y los mejores ingredientes. Somos un emprendimiento familiar que
+            busca llevar dulzura y felicidad a cada hogar.
+        </p>
+
+        <img src="productos.jpg.jpeg" alt="Nuestro equipo">
+    </div>
+</section>
+
+<!-- ===== POSTRES ===== -->
+<section class="productos animado" id="postres">
+    <h2>Postres</h2>
+
+    <div class="contenedor-imgs">
+        <div class="item">
+            <p>Pavé Tradicional</p>
+            <img src="pavé.pjg 1.jpeg" alt="Pavé">
+        </div>
+
+        <div class="item">
+            <p>Pavé de Maracuyá</p>
+            <img src="pavé.pjg 2.jpeg" alt="Maracuyá">
+        </div>
+
+        <div class="item">
+            <p>Pavé de Klim</p>
+            <img src="pavé.pjg 4.jpeg" alt="Klim">
+        </div>
+
+        <div class="item">
+            <p>Pavé de Oreo</p>
+            <img src="pavé.pjg 5.jpeg" alt="Oreo">
+        </div>
+    </div>
+
+    <div class="precios">
+        <h3>Precios</h3>
+        <p><strong>$8.000</strong> sabores tradicionales</p>
+        <p><strong>$9.000</strong> sabor Oreo</p>
+    </div>
+</section>
+
+<!-- ===== BEBIDAS ===== -->
+<section class="productos animado" id="bebidas">
+    <h2>Bebidas</h2>
+
+    <div class="contenedor-imgs">
+        <div class="item">
+            <p>Mocca</p>
+            <img src="mocca.jpg.jpeg" alt="Mocca">
+        </div>
+
+        <div class="item">
+            <p>Agua</p>
+            <img src="agua.jpg.jpeg" alt="Agua">
+        </div>
+
+        <div class="item">
+            <p>Café Frío</p>
+            <img src="granizado.jpg.jpeg" alt="Café Frío">
+        </div>
+    </div>
+
+    <div class="precios">
+        <h3>Precios Bebidas</h3>
+        <ul style="list-style:none; padding:0; line-height:1.7;">
+            <li> Agua — <strong>$5.000</strong></li>
+            <li> Mocca — <strong>$7.000</strong></li>
+            <li> Café Frío — <strong>$6.000</strong></li>
+        </ul>
+    </div>
+</section>
+
+<!-- ===== WHATSAPP ===== -->
+<a class="whatsapp-flotante" href="https://wa.me/573181211377" target="_blank" id="contacto">💬</a>
+
+<footer class="animado">
+    © 2025 Bocados de Ensueño — Hecho con amor ❤️
+</footer>
+
+<!-- ===== SCRIPT DE ANIMACIÓN ===== -->
+<script>
+    const elementos = document.querySelectorAll('.animado');
+
+    function mostrarScroll() {
+        let scrollTop = document.documentElement.scrollTop;
+
+        elementos.forEach(el => {
+            if (el.offsetTop - 500 < scrollTop) {
+                el.classList.add('animar');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', mostrarScroll);
+</script>
+
+</body>
+</html>
